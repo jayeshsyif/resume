@@ -71,7 +71,7 @@
 	}
 	.fade-right-container {
 	  opacity: 0;
-	  animation-name: fadeRight;
+	  animation-name: slideUp;
 	  animation-duration: 1s;
 	  animation-delay: var(--delay, 0s);
 	  animation-fill-mode: forwards;
@@ -82,6 +82,17 @@
 	  to {
 		opacity: 1;
 		transform: translateX(0);
+	  }
+	}
+	
+	@keyframes slideUp {
+	  from {
+		opacity: 0;
+		transform: translateY(30px);
+	  }
+	  to {
+		opacity: 1;
+		transform: translateY(0);
 	  }
 	}
 	
