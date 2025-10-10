@@ -69,6 +69,23 @@
 		margin: auto;
 		padding: 20px;
 	}
+	.fade-right-container {
+	  opacity: 0;
+	  animation-name: fadeRight;
+	  animation-duration: 1s;
+	  animation-delay: var(--delay, 0s);
+	  animation-fill-mode: forwards;
+	  animation-timing-function: ease;
+	}
+
+	@keyframes fadeRight {
+	  to {
+		opacity: 1;
+		transform: translateX(0);
+	  }
+	}
+	
+
   </style>
 </head>
 <body>
@@ -102,7 +119,7 @@
 	<!-- <button class="btn btn-secondary theme-toggle">Toggle Dark Mode</button> -->
 	<div class="row">
 		<div class="col-sm">
-			<section class="resume-section">
+			<section class="resume-section fade-right-container" style="--delay: 0s;">
 				<p class="section-title">Profile
 					<a href="https://www.linkedin.com/in/jayesh-ganatra-76051056" class="text-decoration-none d-print-none"> 
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -117,7 +134,7 @@
 			</section>
 		</div>
 		<div class="col-sm">
-			<section class="resume-section m-0">
+			<section class="resume-section m-0 fade-right-container" style="--delay: 0.3s;">
 				<p class="section-title">Experience</p>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item bg-light mb-0 p-0">OpenText
@@ -187,7 +204,7 @@
 	</div>
 	<div class="row">
 		<div class="col-sm">
-			<section class="resume-section">
+			<section class="resume-section fade-right-container" style="--delay: 0.6s;">
 				<p class="section-title">Skills</p>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item bg-light mb-0 p-0">Backend
@@ -228,7 +245,7 @@
 			</section>
 		</div>
 		<div class="col-sm">
-			<section class="resume-section">
+			<section class="resume-section fade-right-container" style="--delay: 0.9s;"> 
 				<p class="section-title">Education</p>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item bg-light mb-0 p-0">Bachelor of Engineering
@@ -307,7 +324,7 @@
 	</div>
 	<div class="row">
 		<div class="col-sm">
-			<section class="resume-section">
+			<section class="resume-section fade-right-container" style="--delay: 1.2s;">
 				<p class="section-title">Achievements</p>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item bg-light mb-0 p-0">Application Certification Completion (Recognition)
@@ -348,7 +365,7 @@
 			</section>
 		</div>
 		<div class="col-sm">
-			<section class="resume-section">
+			<section class="resume-section fade-right-container" style="--delay: 1.5s;">
 				<p class="section-title">Contribution</p>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item bg-light mb-0 p-0">Open-Source contribution 
@@ -380,7 +397,7 @@
 	<br/>
 	<div class="row mt-3">
 		<div class="col">
-			<section class="resume-section">
+			<section class="resume-section fade-right-container" style="--delay: 1.8s;">
 				<p class="section-title">Projects</p>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item bg-light mb-0 p-0">BizManager 
@@ -451,7 +468,7 @@
 			</section>
 		</div>
 	</div>
-	<section class="resume-section">
+	<section class="resume-section fade-right-container" style="--delay: 2.1s;">
 		<p class="section-title d-print-none">Other Details</p>
 		<div class="card-group border-0 d-print-none">
 			<div class="card border-0">
