@@ -1,5 +1,1 @@
-fork of
-
-universal resume
-
- https://github.com/WebPraktikos/universal-resume?tab=readme-ov-file
+Jayesh Ganatra Resume built using bootstrap
