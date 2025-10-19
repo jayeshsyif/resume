@@ -1,3 +1,7 @@
 Jayesh Ganatra’s resume, designed and developed using Bootstrap framework.
 
-Experienced and results-driven Lead Software Engineer with a strong background in designing and developing scalable enterprise applications. Proven expertise in leading cross-functional teams, architecting robust solutions, and driving innovation in fast-paced environments. Adept at leveraging modern technologies and frameworks to deliver high-performance software systems. Passionate about clean code, agile methodologies, and continuous improvement.
+Link: https://jayeshsyif.github.io/resume/ 
+
+Lead Software Engineer with over a decade of experience designing and delivering enterprise-grade solutions across diverse industries. Skilled in translating complex business requirements into scalable, secure, and maintainable architectures using Java, microservices, and cloud-native technologies. 
+
+Passionate about system design, performance optimization, and driving architectural decisions that align with long-term product vision. On a focused path toward becoming a Technology Architect, with a strong foundation in integration protocols, DevOps practices, and cross-functional collaboration.
