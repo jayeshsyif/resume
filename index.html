@@ -192,7 +192,6 @@
 		<h1 class="text-dark text-center">Jayesh Ganatra</h1>
 	</div>
 	</section>
-	<!-- <button class="btn btn-secondary theme-toggle">Toggle Dark Mode</button> -->
 	<div class="row">
 		<div class="col-sm">
 			<section class="resume-section fade-right-container" style="--delay: 0s;">
@@ -225,8 +224,8 @@
 									<p class="mb-0">Lead Software Engineer
 									</p>
 									<div class="row">
-										<p class="col-8 text-start fw-light small mb-0">
-											02/2023 – present &nbsp; &bull; &nbsp; 1 year 12+ months
+										<p class="col-8 text-start fw-light small mb-0" id="experience">
+											03/2023 – present &nbsp; &bull; &nbsp;
 										</p>
 										<p class="col-4 text-end fw-light small mb-0">
 											Bengaluru, India
@@ -236,7 +235,7 @@
 									</p>
 									<div class="row">
 										<p class="col-8 text-start fw-light small mb-0">
-											06/2018 – 02/2023 &nbsp; &bull; &nbsp; 4 years 8 months
+											06/2018 – 03/2023 &nbsp; &bull; &nbsp; 4 years 10 months
 										</p>
 										<p class="col-4 text-end fw-light small mb-0">
 											Bengaluru, India
@@ -605,6 +604,7 @@
 		</div>
 	</section>
 	<section class="resume-section d-none d-print-block">
+	<br/> <br/> <br/><br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
 		<p class="section-title">Declaration</p>
 		<br/> <br/> <br/>
 		<p class="text-end">Jayesh Ganatra</p>
@@ -613,11 +613,27 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    document.querySelector('.theme-toggle').addEventListener('click', function () {
-      const html = document.documentElement;
-      const currentTheme = html.getAttribute('data-bs-theme');
-      html.setAttribute('data-bs-theme', currentTheme === 'light' ? 'dark' : 'light');
+	document.addEventListener("DOMContentLoaded", function() {
+      const experience = calculateExperience("03/01/2023");
+      document.getElementById("experience").textContent += experience;
     });
+		
+	function calculateExperience(startDateStr) {
+	  const startDate = new Date(startDateStr);
+	  const endDate = new Date(); // present date
+	  let years = endDate.getFullYear() - startDate.getFullYear();
+	  let months = endDate.getMonth() - startDate.getMonth();
+
+	  if (months < 0) {
+		years--;
+		months += 12;
+	  }
+
+	  const displayMonths = months === 0 ? "" : months + (months >= 9 ? "+ months" : " months");
+	  return years > 0
+		? `${years} year${years > 1 ? "s" : ""} ${displayMonths}`.trim()
+		: `${months} months`;
+	}
   </script>
 			
 		
