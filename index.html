@@ -197,7 +197,7 @@
 			<section class="resume-section fade-right-container" style="--delay: 0s;">
 				<p class="section-title text-secondary bold">About Me
 				</p>
-				<p class="lh-sm">Experienced Software Engineer with over 10+ years in Java development, skilled in all phases of the software development lifecycle. From Planning, Analysis, Architecture, Design, Problem Solving, Implementation to Deployment. 
+				<p class="lh-sm">Experienced Software Engineer with over <span id="totalExperience">12+ years</span> in Java development, skilled in all phases of the software development lifecycle. From Planning, Analysis, Architecture, Design, Problem Solving, Implementation to Deployment. 
 				</p>
 				<p class="lh-sm">Proficient in developing B2B software applications. Strong ability to prioritize team tasks, foster collaboration, promote an inclusive work environment. Familiar with Agile methodologies and experienced in Scrum teams. Experience in software applications under B2B information management domain based on several protocols, such as PEPPOL, AS4, AS2, FTP, SFTP, HTTPS, SMTP and more.
 				</p>
@@ -224,7 +224,7 @@
 									<p class="mb-0">Lead Software Engineer
 									</p>
 									<div class="row">
-										<p class="col-8 text-start fw-light small mb-0" id="experience">
+										<p class="col-8 text-start fw-light small mb-0" id="currentCompanyExperience">
 											03/2023 – present &nbsp; &bull; &nbsp;
 										</p>
 										<p class="col-4 text-end fw-light small mb-0">
@@ -618,8 +618,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
 	document.addEventListener("DOMContentLoaded", function() {
-      const experience = calculateExperience("03/01/2023");
-      document.getElementById("experience").textContent += experience;
+	  const totalExperience = calculateTotalExperience("07/01/2013");
+	  document.getElementById("totalExperience").textContent = totalExperience;
+      const currentCompanyExperience = calculateExperience("03/01/2023");
+      document.getElementById("currentCompanyExperience").textContent += currentCompanyExperience;
     });
 		
 	function calculateExperience(startDateStr) {
@@ -636,6 +638,23 @@
 	  const displayMonths = months === 0 ? "" : months + (months >= 9 ? "+ months" : " months");
 	  return years > 0
 		? `${years} year${years > 1 ? "s" : ""} ${displayMonths}`.trim()
+		: `${months} months`;
+	}
+	
+	function calculateTotalExperience(startDateStr) {
+	  const startDate = new Date(startDateStr);
+	  const endDate = new Date(); // present date
+	  let years = endDate.getFullYear() - startDate.getFullYear();
+	  let months = endDate.getMonth() - startDate.getMonth();
+
+	  if (months < 0) {
+		years--;
+		months += 12;
+	  }
+
+	  const displayMonths = months === 0 ? "" : months + (months >= 9 ? "+ months" : " months");
+	  return years > 0
+		? `${years}+ year${years > 1 ? "s" : ""}`.trim()
 		: `${months} months`;
 	}
   </script>
