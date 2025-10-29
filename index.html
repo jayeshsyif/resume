@@ -79,7 +79,7 @@
       color: var(--bs-body-color);
     }
 	.body-color {
-		background-color: #002349;
+		background-color: #e2e2e2;
 	}
     .resume-section {
       padding: 1rem 0;
@@ -89,6 +89,12 @@
       margin-bottom: 1rem;
       padding-bottom: 0.5rem;
     }
+	.custom-color-2 {
+		background-color : #e6ebe5;
+	}
+	.custom-color-3 {
+		background-color : #957C3D;
+	}
 	.border-start {
 		border-color: #957C3D !important;
 	}
@@ -98,13 +104,13 @@
 	}
     @media print {
 		.customBody {
-			background-color: #FFFFFF;
+			background-color : white !important;
+		}
+		.custom-color-2 {
+			background-color : white !important;
 		}
 		@page {
-			margin-top: 12px;
-			margin-bottom: 12px;
-			margin-left: 12px;
-			margin-right: 12px;
+			margin: 0; 
 		  }
 		  .page-break {
 			page-break-after: always;
@@ -115,6 +121,8 @@
 			-webkit-print-color-adjust: exact !important;
 			color-adjust: exact !important;
 			color: black !important;
+			padding: 10px; 
+			background-color : white !important;
 		  }
 
 		  .page {
@@ -134,6 +142,8 @@
 			max-width: 100% !important;
 			padding: 10px !important;
 			margin: 0px !important;
+			box-shadow: 0px 0px 0px !important;
+			background-color : white !important;
 		}
 		.col-sm.col-md-4 {
 			flex: 0 0 33.333333%;
@@ -158,9 +168,11 @@
       background-color: currentColor; /* Matches text color */
     }
 	.customizedContainer {
+		background-color: #e6ebe5;
 		max-width: 960px;
 		margin: auto;
 		padding: 20px;
+		box-shadow: 0px 30px 40px grey;
 	}
 	.fade-right-container {
 	  opacity: 0;
@@ -202,18 +214,20 @@
 		opacity: 0.5;
 	  }
 	}
-	
+	.custom-text-color-white{
+		color: white;
+	}
 
   </style>
 </head>
 <body class="body-color customBody">
 
-<div class="container-lg customizedContainer bg-white regular">
+<div class="container-lg customizedContainer regular">
 	<section class="resume-section">
 	<div class="m-1 d-flex align-items-center">
-		<div class="p-3 me-3 body-color fade-right-container" style="--delay: 0s;">
-			<p class="row text-white m-0 text-center bold">J</p>
-			<p class="row text-white m-0 text-center bold">G</p>
+		<div class="p-3 me-3 custom-color-3 fade-right-container" style="--delay: 0s;">
+			<p class="custom-color-3 custom-text-color-white m-0 text-center bold">J</p>
+			<p class="custom-color-3 custom-text-color-white m-0 text-center bold">G</p>
 		</div>
 		<h1 class="text-dark text-center fade-right-container" style="--delay: 0.3s;">Jayesh Ganatra</h1>
 	</div>
@@ -243,13 +257,13 @@
 		<div class="col-sm">
 			<section class="resume-section m-0">
 				<p class="section-title text-secondary bold">Experience</p>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item mb-0 p-0">OpenText
-								<ul class="list-group-flush">
-								<li class="list-group-item border-start ">
+					<ul class="list-group list-group-flush custom-color-2">
+						<li class="list-group-item mb-0 p-0 custom-color-2">OpenText
+								<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
 									<p class="mb-0">Lead Software Engineer
 									</p>
-									<div class="row">
+									<div class="row custom-color-2">
 										<p class="col-8 mb-0">
 											<label class="text-start fw-light small">
 												03/2023 –
@@ -264,7 +278,7 @@
 									</div>
 									<p class="mb-0 mt-2 border-top border-1">Senior Software Engineer
 									</p>
-									<div class="row">
+									<div class="row custom-color-2">
 										<p class="col-8 text-start fw-light small mb-0">
 											06/2018 – 03/2023 &nbsp; &bull; &nbsp; 4 years 10 months
 										</p>
@@ -276,13 +290,13 @@
 							</ul>
 						</li>
 					</ul>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item  mb-0 p-0">Wipro Technologies
-								<ul class="list-group-flush">
-								<li class="list-group-item border-start ">
+					<ul class="list-group list-group-flush custom-color-2">
+						<li class="list-group-item  mb-0 p-0 custom-color-2">Wipro Technologies
+								<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
 									<p class=" mb-0">Software Engineer
 									</p>
-									<div class="row">
+									<div class="row custom-color-2">
 										<p class="col-8 text-start fw-light small mb-0">
 											06/2016 – 06/2018 &nbsp; &bull; &nbsp; 2 years
 										</p>
@@ -294,13 +308,13 @@
 							</ul>
 						</li>
 					</ul>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item  mb-0 p-0">Spaneos Software Solutions
-								<ul class="list-group-flush">
-								<li class="list-group-item border-start ">
+					<ul class="list-group list-group-flush custom-color-2">
+						<li class="list-group-item  mb-0 p-0 custom-color-2">Spaneos Software Solutions
+								<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
 									<p class=" mb-0">Software Engineer
 									</p>
-									<div class="row">
+									<div class="row custom-color-2">
 										<p class="col-8 text-start fw-light small mb-0">
 											07/2013 – 06/2016 &nbsp; &bull; &nbsp; 3 years
 										</p>
@@ -320,36 +334,36 @@
 			<section class="resume-section">
 				<p class="section-title text-secondary bold">Skills</p>
 					<ul class="list-group list-group-flush">
-						<li class="list-group-item  mb-0 p-0">Backend
-							<ul class="list-group-flush">
-								<li class="list-group-item border-start ">
+						<li class="list-group-item  mb-0 p-0 custom-color-2">Backend
+							<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
 									<p class="fw-light small mb-0">Java / J2EE, Spring Core, Spring MVC, Spring Boot, JPA, Hibernate, REST and SOAP web service</p>
 								</li>
 							</ul>
 						</li>
 					</ul>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item  mb-0 p-0">Frontend
-							<ul class="list-group-flush">
-								<li class="list-group-item border-start ">
-									<p class="fw-light small mb-0">HTML, JSP (Java Servlet), JavaScript/ jQuery, Android</p>
+					<ul class="list-group list-group-flush custom-color-2">
+						<li class="list-group-item  mb-0 p-0 custom-color-2">Frontend
+							<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
+									<p class="fw-light small mb-0">HTML, JSP, Servlet, JavaScript/ jQuery, Android</p>
 								</li>
 							</ul>
 						</li>
 					</ul>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item  mb-0 p-0">Database
-								<ul class="list-group-flush">
-								<li class="list-group-item border-start ">
-									<p class="fw-light small mb-0">MSSQL, MySQL, Oracle 12c, MongoDB, other RDBMS</p>
+					<ul class="list-group list-group-flush custom-color-2">
+						<li class="list-group-item  mb-0 p-0 custom-color-2">Database
+								<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
+									<p class="fw-light small mb-0">MSSQL, MySQL, Oracle 12c, MongoDB, Other relational databases</p>
 								</li>
 							</ul>
 						</li>
 					</ul>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item  mb-0 p-0">Version Control and Infra Tech
-								<ul class="list-group-flush">
-								<li class="list-group-item border-start ">
+					<ul class="list-group list-group-flush custom-color-2">
+						<li class="list-group-item  mb-0 p-0 custom-color-2">Version Control and Infra Tech
+								<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
 									<p class="fw-light small mb-0">Maven, Apache Ant, Git, Mercurial, TeamCity, Jenkins, Sonar, Microservices, Docker, Kubernetes, Apache Kafka</p>
 								</li>
 							</ul>
@@ -359,11 +373,11 @@
 		</div>
 		<div class="col-sm">
 			<section class="resume-section"> 
-				<p class="section-title text-secondary bold">Education</p>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item  mb-0 p-0">Bachelor of Engineering
-							<ul class="list-group-flush">
-								<li class="list-group-item border-start ">
+				<p class="section-title text-secondary bold custom-color-2">Education</p>
+					<ul class="list-group list-group-flush custom-color-2">
+						<li class="list-group-item  mb-0 p-0 custom-color-2">Bachelor of Engineering
+							<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
 									<div class="row">
 										<p class="col-6 text-start fw-light small mb-0">
 											62.13%
@@ -384,10 +398,10 @@
 							</ul>
 						</li>
 					</ul>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item  mb-0 p-0">Diploma in Information Technology
-								<ul class="list-group-flush">
-								<li class="list-group-item border-start ">
+					<ul class="list-group list-group-flush custom-color-2">
+						<li class="list-group-item  mb-0 p-0 custom-color-2">Diploma in Information Technology
+								<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
 									<div class="row">
 										<p class="col-6 text-start fw-light small mb-0">
 											72.60%
@@ -408,11 +422,11 @@
 							</ul>
 						</li>
 					</ul>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item  mb-0 p-0">Secondary School Certificate (SSC)
-								<ul class="list-group-flush">
-								<li class="list-group-item border-start ">
-									<div class="row">
+					<ul class="list-group list-group-flush custom-color-2">
+						<li class="list-group-item  mb-0 p-0 custom-color-2">Secondary School Certificate (SSC)
+								<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
+									<div class="row custom-color-2">
 										<p class="col-6 text-start fw-light small mb-0">
 											76.13%
 										</p>
@@ -420,7 +434,7 @@
 											2006
 										</p>
 									</div>
-									<div class="row">
+									<div class="row custom-color-2">
 										<p class="col-8 text-start fw-light small mb-0">
 											Maharashtra State Secondary &amp; Higher Secondary Education University
 										</p>
@@ -438,12 +452,12 @@
 	<div class="row fade-right-container" style="--delay: 1.2s;">
 		<div class="col-sm">
 			<section class="resume-section">
-				<p class="section-title text-secondary bold">Achievements</p>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item  mb-0 p-0">Application Certification Completion (Recognition)
-							<ul class="list-group-flush">
-								<li class="list-group-item border-start ">
-									<div class="row">
+				<p class="section-title text-secondary bold custom-color-2">Achievements</p>
+					<ul class="list-group list-group-flush custom-color-2">
+						<li class="list-group-item  mb-0 p-0 custom-color-2">Application Certification Completion (Recognition)
+							<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
+									<div class="row custom-color-2">
 										<p class="col-8 text-start fw-light small mb-0">
 											OpenText
 										</p>
@@ -457,11 +471,11 @@
 							</ul>
 						</li>
 					</ul>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item  mb-0 p-0">Knight of Quarter (Award)
-							<ul class="list-group-flush ">
-								<li class="list-group-item border-start ">
-									<div class="row">
+					<ul class="list-group list-group-flush custom-color-2">
+						<li class="list-group-item  mb-0 p-0 custom-color-2">Knight of Quarter (Award)
+							<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
+									<div class="row custom-color-2">
 										<p class="col-8 text-start fw-light small mb-0">
 											Wipro Technologies
 										</p>
@@ -479,18 +493,18 @@
 		</div>
 		<div class="col-sm">
 			<section class="resume-section">
-				<p class="section-title text-secondary bold">Contribution</p>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item  mb-0 p-0">Open-Source contribution 
+				<p class="section-title text-secondary bold custom-color-2">Contribution</p>
+					<ul class="list-group list-group-flush custom-color-2">
+						<li class="list-group-item  mb-0 p-0 custom-color-2">Open-Source contribution 
 							<a href="https://play.google.com/store/apps/details?id=org.j_keepass" class="text-decoration-none d-print-none"> 
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
 								  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
 								  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
 								</svg>
 							</a>
-							<ul class="list-group-flush ">
-								<li class="list-group-item border-start ">
-									<div class="row">
+							<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
+									<div class="row custom-color-2">
 										<p class="col-6 text-start fw-light small mb-0">
 											Password Management App
 										</p>
@@ -509,16 +523,16 @@
 	</div>
 </div>
 <div class="page-break"></div>
-<div class="container-lg customizedContainer bg-white regular">
+<div class="container-lg customizedContainer regular">
 	<div class="row mt-3 fade-right-container" style="--delay: 1.5s;">
 		<div class="col">
 			<section class="resume-section">
 				<p class="section-title text-secondary bold">Projects</p>
 					<ul class="list-group list-group-flush">
-						<li class="list-group-item  mb-0 p-0">BizManager 
-							<span class="position-absolute top-0 end-0 fw-light small mb-0">06/2018 – present</span>
-							<ul class="list-group-flush">
-								<li class="list-group-item border-start ">
+						<li class="list-group-item  mb-0 p-0 custom-color-2">BizManager 
+							<span class="position-absolute top-0 end-0 fw-light small mb-0 custom-color-2">06/2018 – present</span>
+							<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
 									<p class="fw-light small mb-0">Information Management domain
 									</p>
 									<p class="fw-light mt-1 small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A B2B application that allows customers to configure and manage file transfers between applications using several protocols, such as PEPPOL, AS4/AS2, FTP, SFTP, HTTPS, and SMTP, as well as produce reports and audit transactions involving file transfers. Administrators can manage users, services and gateways, password policies, and download service logs. The application provides Administrator users and non-admin users whose access can be defined according to their role.
@@ -543,7 +557,7 @@
 										&nbsp;&nbsp;&nbsp;R&amp;D on new frameworks &amp; features to enhance product capabilities. 
 									</p>
 									<p class="fw-light small mb-0 ml-1">
-										&nbsp;&nbsp;&nbsp;To design solutions for complex CRs and develop new modules. 
+										&nbsp;&nbsp;&nbsp;Design solutions for complex change requests (CRs) and develop new modules. 
 									</p>
 									<p class="fw-light small mb-0 ml-1">
 										&nbsp;&nbsp;&nbsp;Responsible for production bug troubleshoot and fixes. 
@@ -555,11 +569,11 @@
 							</ul>
 						</li>
 					</ul>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item  mb-0 p-0">Way2Go 
+					<ul class="list-group list-group-flush custom-color-2">
+						<li class="list-group-item  mb-0 p-0 custom-color-2">Way2Go 
 								<span class=" position-absolute top-0 end-0 fw-light small mb-0">06/2016 – 06/2018</span>
-								<ul class="list-group-flush">
-								<li class="list-group-item border-start ">
+								<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
 									<p class="fw-light small mb-0">Travel & Expense domain
 									</p>
 									<p class="fw-light mt-1 small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A B2B product to ease the corporate organization’s travel and expense division with ERP and Global Distribution System (GDS) integration. The product also features the data analysis portal to provide various ways to highlight the travel and expense reports. Large and small organizations can easily track business travel and expense anytime and anywhere.
@@ -572,7 +586,7 @@
 									<p class="fw-light small mt-1 mb-0">Responsibilities:
 									</p>
 									<p class="fw-light mt-1 small mb-0 ml-1">
-										&nbsp;&nbsp;&nbsp;Analyses and discuss the business requirements.
+										&nbsp;&nbsp;&nbsp;Analyze and discuss the business requirements.
 									</p>
 									<p class="fw-light small mb-0 ml-1">
 										&nbsp;&nbsp;&nbsp;Responsible for the feature development and implementation.
@@ -589,23 +603,23 @@
 	</div>
 	<section class="resume-section fade-right-container" style="--delay: 1.8s;">
 		<p class="section-title d-print-none">Other Details</p>
-		<div class="card-group border-0 d-print-none">
+		<div class="card-group border-0 d-print-none custom-color-2">
 			<div class="card border-0">
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item  mb-0 p-0">Location
-								<ul class="list-group-flush">
-							<li class="list-group-item border-start ">
-								<p class="fw-light  mb-0">Bengaluru, India</p>
-							</li>
+				<ul class="list-group list-group-flush custom-color-2">
+					<li class="list-group-item  mb-0 p-0 custom-color-2">Location
+								<ul class="list-group-flush custom-color-2">
+								<li class="list-group-item border-start custom-color-2">
+									<p class="fw-light  mb-0">Bengaluru, India</p>
+								</li>
 						</ul>
 					</li>
 				</ul>
 			</div>
-			<div class="card border-0 d-print-none">
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item  mb-0 p-0">LinkedIn
-						<ul class="list-group-flush ">
-							<li class="list-group-item border-start ">
+			<div class="card border-0 d-print-none custom-color-2">
+				<ul class="list-group list-group-flush custom-color-2">
+					<li class="list-group-item  mb-0 p-0 custom-color-2">LinkedIn
+						<ul class="list-group-flush custom-color-2">
+							<li class="list-group-item border-start custom-color-2">
 								<p class="fw-light  mb-0">
 									<a href="https://www.linkedin.com/in/jayesh-ganatra-76051056" class="text-decoration-none d-print-none"> 
 										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -618,11 +632,11 @@
 					</li>
 				</ul>
 			</div>
-			<div class="card border-0 d-print-none">
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item  mb-0 p-0">Resume in PDF
-						<ul class="list-group-flush ">
-							<li class="list-group-item border-start ">
+			<div class="card border-0 d-print-none custom-color-2">
+				<ul class="list-group list-group-flush custom-color-2">
+					<li class="list-group-item  mb-0 p-0 custom-color-2">Resume in PDF
+						<ul class="list-group-flush custom-color-2">
+							<li class="list-group-item border-start custom-color-2">
 								<p class="fw-light  mb-0">
 									<a href="Jayesh_Ganatra_Resume.pdf"class="text-decoration-none"> 
 										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
@@ -643,7 +657,7 @@
 		<p class="section-title">Declaration</p>
 		<br/> <br/> <br/>
 		<p class="text-end">Jayesh Ganatra</p>
-	</section>
+	</section>	
 </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
